@@ -36,16 +36,16 @@ jobs:
           gradle-version: '8.9'
 
       - name: Run unit tests
-        working-directory: project
+        working-directory: project/In-GRID-able-Drawings-Playtest-0.1
         run: gradle test
 
       - name: Build debug APK
-        working-directory: project
+        working-directory: project/In-GRID-able-Drawings-Playtest-0.1
         run: gradle assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: In-GRID-able-Drawings-Playtest-0.1-debug
-          path: project/app/build/outputs/apk/debug/app-debug.apk
+          path: project/In-GRID-able-Drawings-Playtest-0.1/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
