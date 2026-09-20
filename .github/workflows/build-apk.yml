@@ -47,5 +47,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: In-GRID-able-Drawings-Playtest-0.1-debug
-          path: project/In-GRID-able-Drawings-Playtest-0.1/app/build/outputs/apk/debug/app-debug.apk
+          path: project/In-GRID-able-Drawings-Playtest-0.1.1/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
